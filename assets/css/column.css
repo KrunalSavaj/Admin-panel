@@ -1,0 +1,83 @@
+#mychart {
+   position: absolute;
+   top: 0;
+   left: 48%;
+    
+  }
+  
+  /*
+    Hides the labels between the first and last.
+    At the end is +3 because the real last child (.apexcharts-xaxis-label)
+    is an empty label, probably it is bug in Apexcharts.
+  */
+  #mychart .apexcharts-xaxis-texts-g .apexcharts-xaxis-label:nth-child(n+2):nth-last-child(n+3) {
+        display: none;
+  }
+  
+  
+  /*
+    You can try this as well, doesn't work
+  */
+  /* .apexcharts-xaxis-texts-g .apexcharts-xaxis-label:nth-child(n) {
+        display: none;
+  }
+  .apexcharts-xaxis-texts-g .apexcharts-xaxis-label:first-child {
+        display: inline;
+  }
+  .apexcharts-xaxis-texts-g .apexcharts-xaxis-label:last-child {
+        display: inline;
+  } */
+
+ 
+  #mychart .apexcharts-xaxis-texts-g{
+    display: none;
+  }
+  #mychart .apexcharts-yaxis{
+    display: none;
+  }
+  #mychart #apexcharts9gdbezqc{
+    height: 100px;
+  }
+  #mychart #SvgjsSvg1899{
+    height: 100px;
+  }
+  #mychart .apexcharts-toolbar{
+    display: none!important;
+  }
+  #mychart .apexcharts-canvas {
+    margin: 0;
+  }
+  #mychart path{
+    stroke:rgba(60, 210, 165, 0.85)!important;
+    
+  }
+  #mychart .apexcharts-tooltip{
+    background-color: transparent!important;
+    border: none!important;
+    box-shadow: none!important;
+  }
+  #mychart .apexcharts-tooltip-title{
+    display: none!important;
+    
+  }
+  #mychart .apexcharts-xaxistooltip {
+    display: none!important;
+  }
+  #mychart .apexcharts-tooltip-marker{
+    background-color:rgba(60, 210, 165, 0.85)!important;
+  }
+  /* #SvgjsDefs5679{
+    fill: aquamarine!important;
+  } */
+  #mychart .gridRectMaskloxd1fym{
+    display: none;
+  }
+  #mychart .apexcharts-xaxis-tick{
+    display: none;
+  }
+  #mychart .apexcharts-grid{
+    display: none;
+  }
+  #mychart .apexcharts-grid-borders{
+    display: none;
+  }

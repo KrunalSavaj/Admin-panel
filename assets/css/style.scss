@@ -1,0 +1,489 @@
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+$chakra-font: 'Chakra Petch';
+$green-color: #3cd2a5;
+$gray-color: #ffffff80;
+$off-gray: #ffffffbf;
+$black-color:#262626;
+$white-color:#ffffff;
+$cyan-color: rgba(49, 64, 84, 0.9);
+.btn-secondary{
+  background-color: none!important;
+}
+ul, li{
+    list-style: none;
+    font-family: $chakra-font;
+    a{
+        text-decoration: none;
+    }
+}
+.ck{
+    font-family: $chakra-font;
+}
+.text-off{
+    color: $off-gray;
+}
+.bg-head{
+    color:$black-color;
+}
+.text-green{
+    color: $green-color;
+}
+.text-white{
+    color: $white-color;
+}
+.text-gray{
+    color: $gray-color;
+}
+.bg-lable{
+    background-color: #5a5a5a75;
+}
+.bg-cyan{
+    background-color: rgba(46, 56, 69, 0.97);
+}
+.text-b{
+    color:#5f5f5f;
+}
+.bg-green{
+    background-color: $green-color;
+}
+.text-lable{
+    color: #5a5a5a75;
+}
+body {
+    background-image: url('../img/cover-dark.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: $chakra-font;
+    height: 100%;
+    overflow-y: hidden;
+    background-attachment: fixed;
+}
+
+body::after {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(50, 70, 80, 0.9) 0%, rgb(13, 16, 27) 100%);
+    top: 0;
+    left: 0;
+    z-index: 777;    ;
+}
+
+body::before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    z-index: 888;
+     background-image: url('../img/pattern-dark.png');
+    background-repeat: repeat;
+    background-size: 4.6875rem;
+    top: 0;
+}
+// nav start 
+.navbar {
+    background-color: rgba(29, 40, 53, 0.9);
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    background-attachment: fixed;
+    width: 100%;
+    
+    .logo{
+        background-image: url('../img/logo-dark.png');
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            span{
+                display: block;
+                letter-spacing: initial;
+                font-weight: 600;
+                font-size: 1.05rem;
+            }
+        }
+       
+    }
+    img{
+        border-radius: 50%;
+    }
+    .icon{
+        .bell{
+            position: relative;
+        }
+        .bell::after{
+            position: absolute;
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $green-color;
+            left: 20px;
+        }
+        
+    }
+    
+}
+// nav end 
+
+// header start
+.main{
+    position: relative;
+    z-index: 999;
+    height: 100%;
+    top: 0;
+
+  
+    .menu{
+        height: 100vh;
+        position: sticky;
+        padding-top: 20px;
+        top: 0;
+        overflow-y: scroll;
+        background-attachment: fixed;
+         p{
+            font-size: 12px;
+            font-weight: 600;
+        }
+        ul{
+            
+            li{
+              font-family: $chakra-font;
+              padding: 5px 0;
+              a{
+                transition: all 0.7s
+              }
+            }
+            li a:hover{
+                color: $white-color;
+            }
+        }
+        .accordion-button{
+            background-color: transparent!important;
+            box-shadow: none;
+            color: $gray-color;
+            transition: all 0.7s;
+        }
+        .accordion-button:hover{
+            color: $white-color;
+        }
+        .accordion-item{
+            background-color: transparent!important ;
+            border: none;
+        }
+        .accordion-button:not(.collapsed)::after{
+            color: $gray-color;
+        }
+        .accordion-collapse{
+            ul{
+                li{
+                    a{
+                        transition: all 0.7s;
+                    }
+                  
+                }
+                li a:hover{
+                    color: $white-color!important;
+                }
+            }
+        }
+        .accordion-button:not(.collapsed)::after{
+            background-image: url('../img/down\ \(4\).png');
+        }
+        .accordion-button::after{
+            background-image: url('../img/down\ \(4\).png');
+            transition: all 0.7s;
+        }
+        .accordion-button:hover::after{
+            background-image: url('../img/down.png');
+        }
+    }
+    .btn{
+        width: 280px;
+        height: 45px;
+        border: 1px solid $green-color;
+        color: $green-color;
+        transition: all 0.7s;
+        margin-top: 130px;
+        text-align: center;
+        line-height: 30px;
+        font-family: $chakra-font;
+        a{
+            color: $green-color;
+            text-decoration: none;
+          
+        }
+    }
+    .btn:hover{
+        background-color: $green-color;
+        a{
+            color: $white-color;
+            i{
+                color: $white-color;
+            }
+        }
+    }
+} 
+// header end
+
+// dashbord strat 
+.dashbord{
+     padding:30px 0 90px;
+     overflow-y: auto;
+     height: 100vh;
+   .frame{
+   
+    position: relative;
+    .card{
+       background-color: transparent;
+       border: none;
+       position: relative;
+       .card-body{
+        position: relative;
+        h5{
+              font-size: 14px;
+        }
+        h6{
+            font-size: 24px;
+        }
+        ul{
+            li{
+                font-size: 14px;
+            }
+        }
+       }
+       .card-body::after{
+        position: absolute;
+        content: '';
+        box-sizing: border-box;
+       border-left: 1px solid $white-color;
+       border-bottom: 1px solid $white-color;
+       border-color: $white-color;
+       height:12px;
+       width: 12px; 
+       left: 0;
+       bottom: 0;
+      }
+    .card-body::before{
+        position: absolute;
+        content: '';
+        box-sizing: border-box;
+       border-right: 1px solid $white-color;
+       border-top: 1px solid $white-color;
+       border-color: $white-color;
+       height:12px;
+       width: 12px;
+       right: 0;
+       top: 0;
+    }
+    }
+    .card::after{
+        position: absolute;
+        content: '';
+        box-sizing: border-box;
+       border-left: 1px solid $white-color;
+       border-top: 1px solid $white-color;
+       border-color: $white-color;
+       height:12px;
+       width: 12px; 
+      }
+    .card::before{
+        position: absolute;
+        content: '';
+        box-sizing: border-box;
+       border-right: 1px solid $white-color;
+       border-bottom: 1px solid $white-color;
+       border-color: $white-color;
+       height:12px;
+       width: 12px;
+       right: 0;
+       bottom: 0;
+    }
+    
+  }
+  .frame::after{
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    border-top: 1px solid $gray-color;
+    border-bottom: 1px solid $gray-color;
+   width: 90%;
+   height: 100%;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: -1;
+  }
+  .frame::before{
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    border-left: 1px solid $gray-color;
+    border-right: 1px solid $gray-color;
+   width: 100%;
+   height: 80%;
+   top: 50%;
+   left: 0;
+   transform: translatey(-50%);
+  }
+  .frame2::before{
+    height: 93%;
+  }
+  .frame2::after{
+    width: 95%;
+  }
+}
+
+.map{
+    .map-content{
+        span{
+            font-size: 11px;
+            font-weight: 500;
+        }
+        h2{
+            font-weight: 400;
+        }
+        .progress{
+            height: 3px;
+            background-color: #ffffff26;
+            .progress-bar{
+                background-color: #3cd2a5;
+            }
+        }
+        i{
+            font-size: 7px;
+        }
+        .s-disc{
+            font-size: 13px;
+        }
+        .i{
+            color: #3cd2a575;
+        }
+        h3{
+            font-size: 14px;
+        }
+        p{
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .i1{
+            color: #3cd2a5f2;
+        }
+        .i2{
+            color: #3cd2a5bf;
+        }
+        .i3{
+            color: #3cd2a58c;
+        }
+        .i4{
+            color: #3cd2a559;
+        }
+        .i5{
+            color: #3cd2a526;
+        }
+    }
+}
+
+
+.top{
+    .img{
+        position: relative;
+        h3{
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            background-color: #3cd2a5;
+            color: $black-color;
+            font-size: 12px;
+            position: absolute;
+            
+        }
+        h4{
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            background-color:#2626268a;
+            color: $white-color;
+            font-size: 12px;
+            position: absolute;
+            
+        }
+    }
+  
+    .content{
+        h2{
+            font-size: 14px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .box{
+            background-color:#35434a;
+            width: 62px;
+            height: 17px;
+            font-size: 10px;
+            text-align: center;
+            line-height: 17px;
+        }
+    }
+    .no{
+        p{
+            font-size: 12px;
+        }
+    }
+    .log{
+        i{
+            font-size: 6px;
+        }
+        .ib{
+            font-size: 12px;
+        }
+        
+        p{
+            font-size: 13px;
+        }
+        span{
+            font-size: 13px;
+        }
+        .btn1{
+            width: 70px;
+            height: 18px;
+            text-align: center;
+            line-height: 18px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+}
+// dashbord end 
+.add{
+    width: 100%;
+}
+
+ ::-webkit-scrollbar{
+    display: none;
+ }
+
+ @media(min-width:992px){
+    #mychart{
+        width: 100;
+    }
+ }

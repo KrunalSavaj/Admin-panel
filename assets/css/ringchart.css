@@ -1,0 +1,10 @@
+#chart2 {
+  position: absolute;
+  top: 0;
+  left: 65%;
+}
+
+
+.apexcharts-ycrosshairs{
+  box-shadow: none!important;
+}

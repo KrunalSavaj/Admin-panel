@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+#firstchart {
+  position: absolute;
+  top: 0;
+  left: 60%;
+}
+
+#firstchart #SvgjsSvg4780 {
+  display:none !important;
+}
+#firstchart  #SvgjsPath1036  {
+  fill:rgba(60, 210, 165, 0.75)!important;
+  stroke: none!important;
+}
+#firstchart .apexcharts-datalabels{
+  display: none!important;
+}
+  
+
+#firstchart path{
+ 
+  stroke: none!important;
+}
+#firstchart .apexcharts-legend-series{
+  display: none!important;
+} 
+@media(max-width:567px){
+  #firstchart {
+    position: absolute;
+    top: 0;
+    left: 40%;
+  }
+  }

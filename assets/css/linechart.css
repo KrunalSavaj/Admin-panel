@@ -1,0 +1,54 @@
+#mainchart {
+ position: absolute;
+ top: 0;
+ left: 48%;
+}
+#mainchart .SvgjsLine1022{
+  display: none;
+}
+#mainchart .gridRectMaskloxd1fym{
+  display: none;
+}
+#mainchart .apexcharts-xaxis-tick{
+  display: none;
+}
+#mainchart .apexcharts-grid{
+  display: none;
+}
+#mainchart .apexcharts-grid-borders{
+  display: none;
+}
+.apexcharts-line-series {
+  color: white!important;
+}
+.apexcharts-series{
+  stroke:antiquewhite!important;
+}
+#SvgjsG1816{
+  stroke: white!important;
+}
+#SvgjsG2256{
+  color: aqua!important;
+}
+#mainchart path{
+  stroke:rgba(60, 210, 165, 0.85)!important;
+  
+}
+#mainchart .apexcharts-tooltip{
+  background-color: transparent!important;
+  border: none!important;
+  box-shadow: none!important;
+}
+#mainchart .apexcharts-tooltip-title{
+  display: none!important;
+  
+}
+#mainchart .apexcharts-xaxistooltip {
+  display: none!important;
+}
+#mainchart .apexcharts-tooltip-marker{
+  background-color:rgba(60, 210, 165, 0.85)!important;
+}
+#mainchart .apexcharts-text{
+  display: none!important;
+}
